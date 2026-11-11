@@ -3,6 +3,18 @@
     "description": "A block-based content engine and bilingual blog backend for Laravel.",
     "type": "library",
     "license": "Apache-2.0",
+    "homepage": "https://github.com/m2wlabs/heisenberg",
+    "authors": [
+        {
+            "name": "m2wlabs",
+            "email": "mawsphere@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/m2wlabs/heisenberg/issues",
+        "source": "https://github.com/m2wlabs/heisenberg",
+        "docs": "https://github.com/m2wlabs/heisenberg#readme"
+    },
     "keywords": ["laravel", "blocks", "content-engine", "blog", "gutenberg", "cms", "bilingual"],
     "require": {
         "php": "^8.2",
