@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Str;
 
 /**
@@ -23,7 +24,40 @@ use Illuminate\Support\Str;
  * are overridden below to keep `blocks` and `revisions` in lockstep with the
  * post via a shared `deleted_batch_id` UUID — see the method docblocks.
  *
+ * The @property block below mirrors the table's real columns (see
+ * database/migrations/2026_01_01_000001_create_heisenberg_posts_table.php and
+ * the three later add-column migrations). Eloquent has no way to tell a static
+ * analyser which attributes a row actually carries, so without this every
+ * `$post->status` read was an "undefined property" error that the PHPStan
+ * baseline had to silence one file at a time. Declaring them here is the
+ * single place that knowledge belongs — a migration that adds a column now has
+ * exactly one counterpart to update.
+ *
+ * @property int|string $id
+ * @property string|null $translation_group_id
+ * @property int|null $author_id
  * @property string|null $locale The post's home locale (docs/content-translation.md §0).
+ * @property string $type 'post' or 'email' (docs/email-system.md §3).
+ * @property string $title_en
+ * @property string|null $title_fr
+ * @property string $slug
+ * @property int $content_version Server-only optimistic-lock counter.
+ * @property int|null $translated_from_version
+ * @property string|null $excerpt_en
+ * @property string|null $excerpt_fr
+ * @property string|null $rendered_html_en
+ * @property string|null $rendered_html_fr
+ * @property string $status draft|pending_review|published|scheduled|archived.
+ * @property Carbon|null $published_at
+ * @property Carbon|null $scheduled_at
+ * @property int|null $page_padding_x
+ * @property int|null $page_padding_y
+ * @property bool|null $allow_comments
+ * @property int|null $featured_image_id
+ * @property string|null $deleted_batch_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
  */
 class Post extends Model
 {

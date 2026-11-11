@@ -9,6 +9,7 @@ use Heisenberg\Mcp\Support\PostAccess;
 use Heisenberg\Mcp\Support\ToolSchema;
 use Heisenberg\Policies\PostPolicy;
 use Heisenberg\Services\McpToolException;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
 
 /**
@@ -143,7 +144,12 @@ final class PostLifecycleTools implements McpToolProvider
                 $post->published_at = now();
             }
             if ($target === 'scheduled') {
-                $post->scheduled_at = new \DateTimeImmutable((string) $args['scheduled_at']);
+                // Carbon, not a bare DateTimeImmutable: the model's `scheduled_at` cast is
+                // 'datetime', so the attribute IS a Carbon once read back — and the
+                // toIso8601String() call below needs it. Carbon::instance() keeps
+                // DateTimeImmutable's parsing (same default timezone, same thrown
+                // exceptions) and only changes the carrier type.
+                $post->scheduled_at = Carbon::instance(new \DateTimeImmutable((string) $args['scheduled_at']));
             }
             $post->save();
 

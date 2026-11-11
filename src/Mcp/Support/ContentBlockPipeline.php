@@ -107,8 +107,10 @@ class ContentBlockPipeline
             'blocks' => $blocks,
         ]);
 
-        if (! ($checked['valid'] ?? false)) {
-            throw new McpToolException('Content rejected: ' . implode('; ', (array) ($checked['errors'] ?? ['invalid payload'])));
+        // validatePayload() always returns the same shape — 'valid' and 'errors' are
+        // always present, so neither needs a ?? guard here.
+        if (! $checked['valid']) {
+            throw new McpToolException('Content rejected: ' . implode('; ', $checked['errors']));
         }
 
         return $checked['blocks'] ?? $blocks;

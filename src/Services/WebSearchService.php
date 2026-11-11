@@ -60,7 +60,7 @@ class WebSearchService
      * text search fell over whenever DuckDuckGo was also throttled. Scraped HTML endpoints
      * still need the browser string; documented APIs want honesty.
      */
-    private const API_USER_AGENT = 'Heisenberg/1.0 (+https://github.com/tedydonel/Heisenberg; block-based content engine) PHP-cURL';
+    private const API_USER_AGENT = 'Heisenberg/1.0 (+https://github.com/m2wlabs/heisenberg; block-based content engine) PHP-cURL';
 
     /**
      * A real response from any backend here (a scraped HTML page or a JSON API) is at

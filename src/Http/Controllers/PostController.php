@@ -129,7 +129,11 @@ class PostController
             } else {
                 // Row lock for the transaction's lifetime — the optimistic-concurrency gate:
                 // nothing can read-then-write between the version check and our write.
-                $post = $existing->newQuery()->lockForUpdate()->findOrFail($existing->getKey());
+                // firstOrFail() rather than findOrFail(): both take the same row lock and
+                // throw the same ModelNotFoundException, but findOrFail() is typed as
+                // Model|Collection, so $post below would be a union and every property
+                // read on it (content_version, status) would be an undefined-property error.
+                $post = $existing->newQuery()->whereKey($existing->getKey())->lockForUpdate()->firstOrFail();
 
                 if ((int) $request->input('content_version') !== (int) $post->content_version) {
                     $conflict = true;

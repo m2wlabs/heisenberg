@@ -127,12 +127,6 @@ parameters:
 			path: src/Blocks/StylePanelFieldRows.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$translation_group_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Console/Commands/MergeTranslationsCommand.php
-
-		-
 			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$content\.$#'
 			identifier: property.notFound
 			count: 4
@@ -235,12 +229,6 @@ parameters:
 			path: src/Http/Controllers/CategoryController.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$allow_comments\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Http/Controllers/CommentController.php
-
-		-
 			message: '#^Offset ''status'' on array\{ok\: false, status\: string, comment\?\: array\{id\: int\|string, parent_id\: int\|string\|null, author_name\: string, body\: string, created_at\: mixed, replies\: list\<mixed\>\}, error\?\: string\} on left side of \?\? always exists and is not nullable\.$#'
 			identifier: nullCoalesce.offset
 			count: 1
@@ -328,42 +316,6 @@ parameters:
 			message: '#^Access to an undefined property Heisenberg\\Models\\Pattern\:\:\$updated_at\.$#'
 			identifier: property.notFound
 			count: 1
-			path: src/Http/Controllers/EditorController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$content_version\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/EditorController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$published_at\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/EditorController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$scheduled_at\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/EditorController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 4
-			path: src/Http/Controllers/EditorController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/EditorController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$type\.$#'
-			identifier: property.notFound
-			count: 3
 			path: src/Http/Controllers/EditorController.php
 
 		-
@@ -511,12 +463,6 @@ parameters:
 			path: src/Http/Controllers/EditorController.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$type\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Http/Controllers/EmailPreviewController.php
-
-		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\Pattern\:\:\$blocks\.$#'
 			identifier: property.notFound
 			count: 2
@@ -629,90 +575,6 @@ parameters:
 			identifier: argument.type
 			count: 1
 			path: src/Http/Controllers/PostCategoryController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$author_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$content_version\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$published_at\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$scheduled_at\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 4
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$translation_group_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$type\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\|Illuminate\\Database\\Eloquent\\Collection\<\(int\|string\), Heisenberg\\Models\\Post\>\:\:\$content_version\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\|Illuminate\\Database\\Eloquent\\Collection\<\(int\|string\), Heisenberg\\Models\\Post\>\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Http/Controllers/PostController.php
 
 		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\SeoMeta\:\:\$canonical_url\.$#'
@@ -847,18 +709,6 @@ parameters:
 			path: src/Http/Controllers/PostController.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$content_version\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostLiveController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$allow_comments\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostPublicController.php
-
-		-
 			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$content\.$#'
 			identifier: property.notFound
 			count: 1
@@ -895,30 +745,6 @@ parameters:
 			path: src/Http/Controllers/PostRevisionsController.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$allow_comments\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostSettingsController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$featured_image_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostSettingsController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$page_padding_x\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostSettingsController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$page_padding_y\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostSettingsController.php
-
-		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\Tag\:\:\$name_en\.$#'
 			identifier: property.notFound
 			count: 1
@@ -949,52 +775,10 @@ parameters:
 			path: src/Http/Controllers/PostTagController.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostTranslationsApiController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$author_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PostTrashController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$deleted_at\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Http/Controllers/PostTrashController.php
-
-		-
-			message: '#^Parameter \#1 \$callback of method Illuminate\\Database\\Eloquent\\Collection\<int,Heisenberg\\Models\\Post\>\:\:map\(\) contains unresolvable type\.$#'
-			identifier: argument.unresolvableType
-			count: 1
-			path: src/Http/Controllers/PostTrashController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$allow_comments\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PreviewController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$type\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/PreviewController.php
-
-		-
 			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$content\.$#'
 			identifier: property.notFound
 			count: 1
 			path: src/Http/Controllers/PreviewController.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$updated_at\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Http/Controllers/SitemapController.php
 
 		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\SeoMeta\:\:\$in_sitemap\.$#'
@@ -1069,70 +853,10 @@ parameters:
 			path: src/Mcp/Support/ContentBlockPipeline.php
 
 		-
-			message: '#^Offset ''blocks'' on array\{valid\: bool, errors\: array\<string\>, errorMap\: array\<string, array\<string\>\>\} on left side of \?\? does not exist\.$#'
+			message: '#^Offset ''blocks'' on array\{valid\: true, errors\: array\<string\>, errorMap\: array\<string, array\<string\>\>\} on left side of \?\? does not exist\.$#'
 			identifier: nullCoalesce.offset
 			count: 1
 			path: src/Mcp/Support/ContentBlockPipeline.php
-
-		-
-			message: '#^Offset ''errors'' on \*NEVER\* on left side of \?\? always exists and is not nullable\.$#'
-			identifier: nullCoalesce.offset
-			count: 1
-			path: src/Mcp/Support/ContentBlockPipeline.php
-
-		-
-			message: '#^Offset ''valid'' on array\{valid\: bool, errors\: array\<string\>, errorMap\: array\<string, array\<string\>\>\} on left side of \?\? always exists and is not nullable\.$#'
-			identifier: nullCoalesce.offset
-			count: 1
-			path: src/Mcp/Support/ContentBlockPipeline.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$content_version\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$type\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Mcp/Support/PostAccess.php
 
 		-
 			message: '#^Access to an undefined property Illuminate\\Database\\Eloquent\\Model\:\:\$content\.$#'
@@ -1145,60 +869,6 @@ parameters:
 			identifier: arrayValues.list
 			count: 1
 			path: src/Mcp/Support/PostAccess.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$deleted_at\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Tools/PostLifecycleTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$published_at\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Mcp/Tools/PostLifecycleTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$scheduled_at\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Mcp/Tools/PostLifecycleTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Mcp/Tools/PostLifecycleTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$allow_comments\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Tools/PostSettingsTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$featured_image_id\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Mcp/Tools/PostSettingsTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$page_padding_x\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Tools/PostSettingsTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$page_padding_y\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Mcp/Tools/PostSettingsTools.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$content_version\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Mcp/Tools/PostTools.php
 
 		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\Revision\:\:\$content_blocks\.$#'
@@ -1381,48 +1051,6 @@ parameters:
 			path: src/Models/Category.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$deleted_batch_id\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Models/Post.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_en\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Models/Post.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_fr\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Models/Post.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Models/Post.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_en\.$#'
-			identifier: property.notFound
-			count: 4
-			path: src/Models/Post.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_fr\.$#'
-			identifier: property.notFound
-			count: 4
-			path: src/Models/Post.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$translation_group_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Post.php
-
-		-
 			message: '#^Call to an undefined method Illuminate\\Database\\Eloquent\\Builder\:\:withTrashed\(\)\.$#'
 			identifier: method.notFound
 			count: 2
@@ -1507,42 +1135,6 @@ parameters:
 			path: src/Models/Revision.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Revision.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$excerpt_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Revision.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$rendered_html_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Revision.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$rendered_html_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Revision.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_en\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Revision.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$title_fr\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Models/Revision.php
-
-		-
 			message: '#^Call to function in_array\(\) with arguments ''auto_save''\|''manual''\|''restore'', array\{''manual'', ''auto_save'', ''restore''\} and true will always evaluate to true\.$#'
 			identifier: function.alreadyNarrowedType
 			count: 1
@@ -1613,18 +1205,6 @@ parameters:
 			identifier: staticClassAccess.privateMethod
 			count: 2
 			path: src/Models/Tag.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$author_id\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Policies/PostPolicy.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Policies/PostPolicy.php
 
 		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\PublicFile\:\:\$uploaded_by\.$#'
@@ -1795,18 +1375,6 @@ parameters:
 			path: src/Services/PostTemplateContractValidator.php
 
 		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/SeoAnalyzer.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$status\.$#'
-			identifier: property.notFound
-			count: 1
-			path: src/Services/SeoAnalyzer.php
-
-		-
 			message: '#^Access to an undefined property Heisenberg\\Models\\SeoMeta\:\:\$canonical_url\.$#'
 			identifier: property.notFound
 			count: 1
@@ -1853,12 +1421,6 @@ parameters:
 			identifier: nullsafe.neverNull
 			count: 1
 			path: src/Services/SeoAnalyzer.php
-
-		-
-			message: '#^Access to an undefined property Heisenberg\\Models\\Post\:\:\$slug\.$#'
-			identifier: property.notFound
-			count: 3
-			path: src/Services/SeoUrlResolver.php
 
 		-
 			message: '#^Binary operation "\+" between non\-empty\-string and 0 results in an error\.$#'
